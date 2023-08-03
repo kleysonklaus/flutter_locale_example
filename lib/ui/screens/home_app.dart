@@ -5,7 +5,11 @@ import '../models/home_app_model.dart';
 import '../presenter/home_app_presenter.dart';
 
 class HomeApp extends StatefulWidget {
-  const HomeApp({super.key});
+  final Map<String, dynamic> languaje;
+  const HomeApp({
+    super.key,
+    required this.languaje,
+  });
 
   @override
   State<HomeApp> createState() => _HomeAppState();
@@ -18,7 +22,7 @@ class _HomeAppState extends State<HomeApp> implements HomeAppInterface {
   @override
   void initState() {
     presenter = HomeAppPresenter(this);
-    presenter.setUi();
+    presenter.getModelUi(widget.languaje);
     super.initState();
   }
 

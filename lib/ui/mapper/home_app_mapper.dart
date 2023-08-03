@@ -1,7 +1,14 @@
 import '../models/home_app_model.dart';
 
-class HomeAppMapper {
-  static HomeAppModel fromMap(Map<String, dynamic> json) {
+/// core
+abstract class Mapper<T> {
+  T fromMap(Map<String, dynamic> json);
+  Map<String, dynamic> toMap(T data);
+}
+
+class HomeAppMapper implements Mapper<HomeAppModel> {
+  @override
+  HomeAppModel fromMap(Map<String, dynamic> json) {
     return HomeAppModel(
       title: json['title'],
       subTitle: json['subTitle'],
@@ -11,7 +18,8 @@ class HomeAppMapper {
     );
   }
 
-  static Map<String, dynamic> toMap(HomeAppModel data) {
+  @override
+  Map<String, dynamic> toMap(HomeAppModel data) {
     return {
       "title": data.title,
       "subTitle": data.subTitle,

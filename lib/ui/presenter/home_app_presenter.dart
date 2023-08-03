@@ -8,11 +8,12 @@ class HomeAppPresenter {
   HomeAppPresenter(this._interface);
 
   late HomeAppModel modelUi;
+  final HomeAppMapper homeAppMapper = HomeAppMapper();
 
   final mapper = HomeAppMapper();
 
-  void setUi() {
-    modelUi = HomeAppModel();
+  void getModelUi(Map<String, dynamic> languaje) {
+    modelUi = homeAppMapper.fromMap(languaje);
     _interface.setUi(modelUi);
   }
 }
