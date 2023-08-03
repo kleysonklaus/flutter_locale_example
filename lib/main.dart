@@ -23,7 +23,7 @@ class Home extends StatelessWidget {
         Locale("en", "US"),
         Locale("es", "ES"),
       ],
-      locale: const Locale("es", "ES"),
+      locale: const Locale("en", "PE"),
       localizationsDelegates: const [
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
