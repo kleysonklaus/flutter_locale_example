@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../interface/home_app_interface.dart';
 import '../models/home_app_model.dart';
 import '../presenter/home_app_presenter.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 class HomeApp extends StatefulWidget {
   final Map<String, dynamic> languaje;
