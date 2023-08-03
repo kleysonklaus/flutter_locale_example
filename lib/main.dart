@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'localizations/app_home_localizations.dart';
-import 'ui/screens/home_app.dart';
 import 'ui/screens/scafold_screen.dart';
 
 void main() {
