@@ -42,6 +42,8 @@ class _HomeAppState extends State<HomeApp>
   @override
   void didChangeLocales(List<Locale>? locale) {
     print("SE CAMBIAAAAAAAAAAAAAAAA");
+
+    /// el nuevo idioma seleccionado en el dispositivo es el primero
     print(locale);
     // This is run when system locales are changed
     super.didChangeLocales(locale);
