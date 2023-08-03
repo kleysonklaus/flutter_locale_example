@@ -16,6 +16,7 @@ class _HomeAppState extends State<HomeApp> implements HomeAppInterface {
   @override
   void initState() {
     presenter = HomeAppPresenter(this);
+    presenter.setUi();
     super.initState();
   }
 
