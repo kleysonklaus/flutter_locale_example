@@ -18,7 +18,9 @@ class Home extends StatelessWidget {
         useMaterial3: true,
       ),
       home: HomeApp(
-        languaje: {},
+        languaje: {
+          "title": "example title",
+        },
       ),
     );
   }
