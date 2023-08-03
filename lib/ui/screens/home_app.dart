@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../interface/home_app_interface.dart';
+import '../presenter/home_app_presenter.dart';
 
 class HomeApp extends StatefulWidget {
   const HomeApp({super.key});
@@ -10,6 +11,14 @@ class HomeApp extends StatefulWidget {
 }
 
 class _HomeAppState extends State<HomeApp> implements HomeAppInterface {
+  late HomeAppPresenter presenter;
+
+  @override
+  void initState() {
+    presenter = HomeAppPresenter(this);
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

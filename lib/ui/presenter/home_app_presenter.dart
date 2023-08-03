@@ -1,3 +1,7 @@
+import '../interface/home_app_interface.dart';
+
 class HomeAppPresenter {
-  HomeAppPresenter();
+  late HomeAppInterface _interface;
+
+  HomeAppPresenter(this._interface);
 }
