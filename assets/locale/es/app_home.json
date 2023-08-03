@@ -1,4 +1,7 @@
 {
-    "title": "titulo en ingles",
-    "subtitle": "titulo en ingles"
+    "title": "titulo en español",
+    "subtitle": "titulo en español",
+    "isActive": false,
+    "number": 888888,
+    "decimal": 7777.99
 }

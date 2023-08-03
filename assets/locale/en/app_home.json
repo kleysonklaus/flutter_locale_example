@@ -1,4 +1,7 @@
 {
     "title": "title in english",
-    "subtitle": "subtitle in english"
+    "subtitle": "subtitle in english",
+    "isActive": true,
+    "number": 9999999,
+    "decimal": 123.456
 }
